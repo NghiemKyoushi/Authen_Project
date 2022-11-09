@@ -23,7 +23,6 @@ export default function Home() {
       url: "http://localhost:8081/api/v1/login",
     });
     setUserData(fetchData.data.user);
-    console.log("fetchData", fetchData)
   };
   useEffect(() => {
     const token = localStorage.getItem("TOKEN");
